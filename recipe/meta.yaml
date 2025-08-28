@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyspf-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyspf-{{ version }}.tar.gz
   sha256: 57a7ef01bda090173aafb6af0106251686ed73f03db4e911fcd34c57fc347186
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 4
+  number: 5
 
 requirements:
   build:
